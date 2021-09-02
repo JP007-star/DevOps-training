@@ -1,0 +1,23 @@
+mkdir <dir_demo>
+rmdir <dir_demo>
+cd 
+ls
+git config --global user.name "JP007-Star"
+git config --global user.email "justice_of_peace@yahoo.com"
+whoami
+dir
+pwd
+clear
+git help
+ls -a
+git status
+touch <filename>
+git add <filename>
+git commit -m "first commit"
+git branch -M main
+git remote add origin <url>
+git remote set-url origin <url>
+git restore --staged<filename>
+git push origin master
+
+
