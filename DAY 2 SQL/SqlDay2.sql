@@ -2,7 +2,7 @@ drop table employee;
 alter table department add depthead varchar(60);
 desc department;
 select * from department;
-alter table department modify column depthead varchar(50);
+alter table department modify column depthead varchar(100);
 alter table department drop column depthead;
 
 update department set deptname="D3" where deptid=3;
