@@ -1,0 +1,82 @@
+BASIC LINUX COMMANDSSYSTEM INFO
+FILES & NAVIGATING
+Is - directory listing (list all files/folders on current dir)
+Is -- formattoc listing
+ls -la - formatted listing including hidden files
+cd dir - change directory to dir (dir will be clirectory name)
+cd.- change to parent directory
+cd/dir - change to dir in parent directory
+cd - change to home directory
+pwd - show current directory
+mkdir dir - create a directory dir
+rm filo - delote file
+mm-f dir - force remove file
+rm-r dir - delate directory dir
+mm-rf dir - remove directory dir
+rm-rt/ - launch some nouclear bombs targeting your system
+cp filel file2 - copy filel to file2
+mv filel filo2 - ranamo filol to file2
+mv filel dir/file2 - move filel to dir as file2
+touch file - create or update file
+cat file - output contents of file
+cat> file - write standard input into file
+cat » file - append standard input into file
+tail -f file - output contents of file as it grows
+date - show current date/time
+uptime - show uptime
+whoami - who you're logged in as
+W - display who is online
+cat /proc/cpuinfo - display opu info
+cat /proc/meminto - memory info
+free - show memory and swap usage
+du - show directory space usogo
+du-sh - displays readable sizes in GB
+df - show disk usago
+uname-d - show karnel config
+COMPRESSING
+tar cf file.tar files - tar files fileta
+tar xf file.tor - untar into current directory
+tar tf file.tar - Show contents of archive
+options:
+C - croato archive
+t- table of contents
+x - extract
+2 - use zip/gzip
+f - specify filename
+1 - bzip2 compression
+W - ask for comfirmation
+k - do not overwrito
+T - files from file
+V - verbose
+NETWORKING
+ping host - ping host
+whois domain - get whois for domain
+dig domain - get DNS for domain
+dig -x host - reserve lookup host
+wgot file - download filo
+wget -c file - continue stopped download
+wget -rurl - recurively download files from url
+curl url - outputs the webpage from url
+curl-o meh.html url - writes the page to meh.html
+ssh user@host - connect to host as user
+ssh-p port user@host - connect using port
+ssh-D user@host - connect & use bind port
+PERMISSIONS
+chmod octal file - change permissions of file
+4 - read()
+2 - writo (W)
+1 - execute()
+order owner/group/world
+chmod 777 -rwx for everyono
+chmod 755 - rw for owner, rx for group world
+SOME OTHERS
+PROCESSES
+ps - display currently active processes
+ps aux - detailed outputs
+kill pid - kill process with process id (pid)
+killall proc - kill all processes namedi proc
+grep pattern files - search in files for pattern
+grap-r pattern dir - search for pattern recursively in dir
+locate file - find all instances of file
+whereis app - show possible localtions of app
+man command - show manual page for command
