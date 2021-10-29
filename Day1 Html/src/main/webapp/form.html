@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+td{
+width:300px;
+}
+padding:50px;
+</style>
+<body>
+<form>
+    <fieldset style="width:10;">
+    <table border="0">
+        <tr>
+            <td><label>Name:</label></td>
+            <td><input type="text"  name="name" id="name"  style="width:250px;" placeholder="Name" required></td>
+        </tr>
+        <tr>
+            <td><label>Username:</label></td>
+            <td><input type="text"  name="username" id="username" style="width:250px;" placeholder="Username" required></td>
+        </tr>
+        <tr>
+            <td><label>Password:</label></td>
+            <td><input type="password"  name="password" id="password"  style="width:250px;" placeholder="Password"></td>
+        </tr>
+        <tr>
+            <td><label>ReEntered Password:</label></td>
+            <td><input type="password"  name="re-password" id="re-password"  style="width:250px;" placeholder="Re-type password"></td>
+        </tr>
+        <tr>
+            <td><label>Gender:</label></td>
+            <td>
+                <select name="gender" id="gender" style="width:250px;">
+                <option></option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Gender</option>
+                 </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Languages Known:</label></td>
+            <td colspan="6">
+                <input type="checkbox" name="language" value="English">English&emsp;
+                <input type="checkbox" name="language" value="Hindi">Hindi<br>
+                <input type="checkbox" name="language" value="Tamil">Tamil&emsp;&emsp;
+                <input type="checkbox" name="language" value="Telugu">Telugu<br>
+                <input type="checkbox" name="language" value="Kanada">Kanada&emsp;
+                <input type="checkbox" name="language" value="other">other languages
+            </td>
+
+        </tr>
+        <tr>
+            <td><label>Age:</label></td>
+            <td colspan="5">
+                <input type="radio" name="age" value="15-25"><label>15-25</label>
+                <input type="radio" name="age" value="25-40"> <label>25-40</label>
+                <input type="radio" name="age" value="40 & above" ><label >40 & above</label>
+            </td>
+        </tr>
+
+    </table>
+
+            <input type="submit" >
+            <input type="button" value="Clear">
+
+    </fieldset>
+</form>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4013544.101253213!2d76.04399906640081!3d10.77475757080142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c582b1189633%3A0x559475cc463361f0!2sTamil%20Nadu!5e0!3m2!1sen!2sin!4v1633344057218!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+<canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;">
+
+</canvas>
+<video width="620" height="440" controls>
+    <source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_640_3MG.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+</video>
+<audio  width="620" height="440" controls>
+    <source src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_1MG.mp3" type="audio/ogg">
+    <source src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_1MG.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<iframe  width="620" height="440"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+<iframe  width="620" height="440" type="application/pdf"
+         src="http://www.africau.edu/images/default/sample.pdf">
+</iframe>
+<iframe src="https://stackoverflow.com/questions/7890160/embed-website-into-my-site" style="width:500px; height: 300px;" class="pdf"></iframe>
+<iframe src="https://stackoverflow.com/" width="100%" height="300">
+    <p>Your browser does not support iframes.</p>
+</iframe>
+<div class="form-group">
+    <label class="custom-file">
+        <input type="file" name="image" id="image" placeholder="Upload your image" aria-describedby="fileHelpId">
+
+    </label>
+    <img class="text-center mx-auto" src="\sample.jpg" alt="img" id="img" >
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script>
+         $('#image').change(function (e) {
+             e.preventDefault();
+             const [file] = image.files
+             if (file) {
+               img.src = URL.createObjectURL(file)
+             }
+         });
+     </script>
+</html>
