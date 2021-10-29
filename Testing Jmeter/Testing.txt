@@ -1,0 +1,121 @@
+Life cycle of Performance testing:
+--------------------------------------
+1. Requirements gathering
+ 
+2. Planning/Design
+ 
+3. Test execution
+ 
+4. Result analysis
+ 
+----------------------------------------
+ 
+1. Requirements gathering. 
+ 
+. what is the application we are going to test -
+. how much user load need to be tested
+. what is the functionality of the application. why it is bulit
+. what is the technology used to build the application
+. what is the server architecture
+. Hardware details of application environment. 
+ 
+
+what is the application we are going to test - e commerce application, ticket booking application, banking apploicaion, telceom application
+ 
+how much user load need to be tested - 1000 users per hour, 10000 users per day. 
+ 
+what is the functionality of the application. why it is bulit - basci user functionality
+ 
+what is the technology used to build the application - Java, database ( Oracle/SQL ), what OS this is deployed
+ 
+what is the server architecture - what type of app server is used ( web logic, web sphere etc), what type of web server (apache tomcat, glassfish ) is used
+ 
+hardware details - app server, web server, db serever ( what amount of Memory each server is having installed ( 32 GB RAM ) webs erver ( 16 GB RAM ), DB server ( 100 GB RAM )
+applicationserver ( 16 core cpu , processor) web server ( 8 core cpu ) DB server ( 32 core cpu ) 
+ 
+--------------------------------------------------------------------------------------------------------
+ 
+2. Planning/Design
+ 
+. how many no of tests will be executed
+. what type of performanc metrics to be collected
+. what is the timelines 
+ 
+----------------------------------------------------------------------------
+3. Test execution 
+ 
+. create test scenarios
+. tester will execute all PT activities
+. collect results of all tests
+------------------------------------------------------
+4. Reporting'
+. create test reports
+. analyse test reports
+. find any performance issues.
+-----------------------------------------------------------------
+http://18.221.250.120:1080/Webtours/
+
+
+[13:17] Ravi (Guest)
+https://petstore.octoperf.com/actions/Catalog.action
+
+[13:17] Ravi (Guest)
+j2ee
+
+[13:17] Ravi (Guest)
+j2ee
+
+[13:19] Ravi (Guest)
+steps of recording:
+
+1. open jmeter using jmeter.bat file
+
+2. click on templates option - green color icon
+
+3. clikc on create on recording templates
+
+4. go to IE
+
+5. change proxy settings - to address ( localhost) port ( 8888 - it should match with jmeter port )
+
+6. go to jmeter and clikc on start button ( means recording is started )
+
+7. change transaction name to launch in transaction controller
+
+8. launch webtours on IE
+
+9. continue with next stpes change transaction name according
+
+10. stop recording
+
+11. check if all transactions recorded or not
+
+
+[16:40] Ravi (Guest)
+1.record jpetsotre2.change transaction names
+
+3. make thread count as 3 users
+
+4. execute it for 5 mins
+
+5. rampup is 30 seconds
+
+6. save results in csv
+
+7. format results
+
+[16:41] Ravi (Guest)
+https://youtu.be/yJLtJONIG10
+
+
+[16:41] Ravi (Guest)
+https://www.guru99.com/performance-testing.html
+
+[16:42] Ravi (Guest)
+3 tier and n tier architecture
+
+[16:43] Ravi (Guest)
+types of non functional testing
+
+
+
