@@ -1,0 +1,57 @@
+1.Write a program to find the sum of all the prime numbers in the range n to m. Display each prime number and the final sum.  
+
+ 
+
+2. Write a program to find the factorial of a given number. 0! is always 1. Factorial of a negative number is not possible.  
+
+ 
+
+3. Write a program to find whether a given number is a Fibonacci number or not. 
+
+ 
+
+4. Write a program to accept a decimal number. Display it in the binary form.  
+
+ 
+
+5. Write a program to accept a binary number and display it in the decimal form.  
+
+ 
+
+6. Write a program to do the following:  
+
+a. Input: 270176  
+
+b. Output: Two Seven Zero One Seven Six  
+
+ 
+
+7. Write a program that takes amount and displays them in words  
+
+a. Input: 1234  
+
+b. Output: One thousand two hundred and thirty-four only  
+
+ 
+
+8. Accept the item code, description, qty and price of an item. Compute the total for the item.  
+
+a. Accept the user�s choice. If the choice is �y� then accept the next set of inputs for a new item and compute the total. In this manner, compute the grand total for all the items purchased by the customer.  
+
+b. If the grand total is more than Rs. 10,000/- then, the customer is allowed a discount of 10%.  
+
+c. If the grand total is less than Rs. 1,000/- and the customer chooses to pay by card, then a surcharge of 2.5% is levied on the grand total.  
+
+d. Display the grand total for the customer in number form and in words.  
+
+ 
+
+9. Write the pseudo codes to generate the following series. In all the following cases, accept N:  
+
+b. 1, 1, 2, 3, 5, 8, 13, � N  
+
+c. 1, 2, 4, 6, 7,10, 10,14� N  
+
+d. 1, 5, 8, 14, 27, 49, � N  
+
+10. Write a program to find X ^ N (x to the power of n) without using in-built functions. Accept X and binary n. Display the result.  
