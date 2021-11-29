@@ -30,3 +30,9 @@ ansible -i file -m setup hostgroup
 ansible -m file -a 'path=/tmp/karthik.txt state=touch' all      ---> create file in client
 ansible -m file -a 'path=/tmp/karthik.txt state=absent' all      ---> create delete in client
 
+ansible-vault create filename.ext
+ansible-vault encrypt filename.ext
+ansible-vault decrypt filename.ext
+ansible-vault edit filename.ext
+ansible-vault rekey filename.ext
+
