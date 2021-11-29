@@ -1,0 +1,19 @@
+# ansible -m file -a 'path=\tmp\jp.text state=absent' all
+# YAML -yet another markup language
+
+- name: create at new file and delete it.
+  hosts: all
+  tasks:
+    - name: create username file in tmp directory
+      file:
+        path: '/tmp/jp.txt'
+        state: touch
+    - name: copy file
+      copy:
+        src: '/etc/ansible/hosts'
+        dest: '/tmp'
+# touch hello.yml
+# gedit or vi hello.yml
+# :wq
+# ansible-playbook hello.yml
+

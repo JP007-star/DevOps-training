@@ -1,0 +1,17 @@
+---
+- name: learn varaiable decleration and usage iniside playbook
+  hosts: all
+  become: yes
+  vars:
+    package: apache2
+    user_allowed: true
+  tasks:
+    - name: We are uninstall {{ package }}
+      apt:
+        name: "{{ package }}"
+        state: absent
+    - name: should not present {{ package }}
+      service:
+        name: apache2
+        state: stopped
+     
