@@ -21,4 +21,12 @@ ansible all -m ping
 
 iptables -L //PORT
 
+192.168.1.108 ansible_user=nodeuser
+
+ansible thbs_solutions -m shell -a 'uname -a'  -i step-02/hosts
+ansible thbs_solutions -m shell -a 'uname -a'  -i myInvetory.txt
+ansible thbs_solutions -m shell -a 'df -h'  -i myInventory.txt
+ansible -i file -m setup hostgroup
+ansible -m file -a 'path=/tmp/karthik.txt state=touch' all      ---> create file in client
+ansible -m file -a 'path=/tmp/karthik.txt state=absent' all      ---> create delete in client
 
