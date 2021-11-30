@@ -1,0 +1,12 @@
+- name: Running Iterative commands
+  hosts: all
+  become: yes
+  tasks:
+   - name: Run Commands
+     ansible.builtin.user:
+       name: "{{item}}"
+       state: present
+     loop: 
+       - client
+       - master
+       - jp
