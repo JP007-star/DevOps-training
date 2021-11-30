@@ -36,3 +36,5 @@ ansible-vault decrypt filename.ext
 ansible-vault edit filename.ext
 ansible-vault rekey filename.ext
 
+ansible-playbook filename.ext --> run file
+
