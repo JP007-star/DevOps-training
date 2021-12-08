@@ -1,0 +1,48 @@
+docker --version
+docker images || docker image list
+docker ps -q
+docker ps -a
+docker ls
+docker run -d ubuntu
+docker run -it --name name1 ubuntu bash
+
+docker run -it -d --name name1 ubuntu bash
+
+docker container exec -it container-name/id bash
+exit
+docker diff container-name/id
+docker commit container-name/id(modified) ashwini-figlet
+docker container start container-name/id
+docker images
+docker run -it -d --name myimagecontainer ashwini_figlet bash
+
+
+
+
+CREATE IMAGE OUT OF DOCKER FILES:
+
+
+
+rm -rf directory_name
+mkdir ashu_images && cd ashu_images
+gedit Dockerfile
+
+
+
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install figlet
+
+
+
+ls
+cat Dockerfile
+
+
+
+docker build -t auto_ashu_figlet .
+docker build -t auto_ashu_figlet .
+docker build --no-cache -t auto_ashu_figlet .
+docker history auto_ashu_figlet
+docker build -f dockerfiles/Dockerfile.debug -t myapp_debug .
+docker build -f dockerfiles/Dockerfile.prod -t myapp_prod .
