@@ -7,3 +7,8 @@ db.collection_name.insert({JSON})       ---> insert a document
 db.collection_name.find()               ---> fetch all documents from collection
 db.getCollectionInfos()                 ---> details of collections
 db.collection_name.find().pretty()      ---> align return_data in proper format
+db.user.insertMany([
+    {'f_name':'Divya','l_name':'Prasad','phone_no': 9180059962},
+    {'f_name':'JP','l_name':'Prasad','phone_no': 9080059362},
+    {'f_name':'Jack','l_name':'Prasad','phone_no': 9080059962}
+    ])                                  ---> insert multiple data single time
