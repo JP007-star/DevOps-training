@@ -21,3 +21,4 @@ db.user.update(
     ) 
                                 --->  update a document
 db.deleteOne({'f_name':'Jaya'}) ---> delete a document
+db.deleteMany({'f_name':'Jaya'}) ---> delete many  documents
