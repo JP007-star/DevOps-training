@@ -17,4 +17,6 @@ db.user.remove({'f_name':'Jaya'})       ---> delete a document
 db.user.update(
     {'_id': ObjectId("61c1bc4b9e42ab15ba8bfbe8")},
     {$set:{'f_name':'Jaya','l_name':'Prasad','phone_no':912000345}}
-    )                                   --->  update a document
+    ) 
+                                --->  update a document
+db.deleteOne({'f_name':'Jaya'}) ---> delete a document
