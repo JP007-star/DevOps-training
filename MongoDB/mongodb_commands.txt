@@ -28,5 +28,7 @@ db.collection_name.drop()                                               ---> dro
 db.admin.renameCollection('admin_collection')                           ---> rename collection
 db.user.createIndex({'qty':1})                                          --->  creating index
 db.user.getIndexes()                                                    --->  getIndexes of collection
-db.collection_name.find().limit()                                       --->  limit result array
+db.collection_name.find().limit(number)                                 --->  limit result array
 db.collection_name.find().count()                                       --->  get number of result fetched
+db.collection_name.find().skip(number)                                  --->  skip number of  documents or result
+db.user.find().sort({f_name:-1})                                        ---> sorting asc 1 and desc -1
