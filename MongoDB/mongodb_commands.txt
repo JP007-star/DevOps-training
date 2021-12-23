@@ -26,3 +26,4 @@ db.admin.updateOne({name:'jp'},{$currentDate:{date:true}})              ---> upd
 db.dropDatabase()                                                       ---> drop database 
 db.createCollection('collection_name',{capped:true,size:10,max:2})      ---> create collection proper statement it will delete old data and hold only max value given while defining
 db.collection_name.drop()                                               ---> drop collection
+db.admin.renameCollection('admin_collection')                           ---> rename collection
