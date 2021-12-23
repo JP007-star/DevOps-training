@@ -1,14 +1,14 @@
-use db                                  ---> create db
-db                                      ---> show db name
-show dbs                                ---> show dbs
-show collections                        ---> show all collectios
-db.stats()                              ---> details db
-db.createCollection('collection_name')  ---> create a collection
-db.collection_name.insert({JSON})       ---> insert a document
-db.collection_name.save({JSON})       ---> save a document
-db.collection_name.find()               ---> fetch all documents from collection
-db.getCollectionInfos()                 ---> details of collections
-db.collection_name.find().pretty()      ---> align return_data in proper format
+use db                                                                  ---> create db
+db                                                                      ---> show db name
+show dbs                                                                ---> show dbs
+show collections                                                        ---> show all collectios
+db.stats()                                                              ---> details db
+db.createCollection('collection_name')                                  ---> create a collection
+db.collection_name.insert({JSON})                                       ---> insert a document
+db.collection_name.save({JSON})                                         ---> save a document
+db.collection_name.find()                                               ---> fetch all documents from collection
+db.getCollectionInfos()                                                 ---> details of collections
+db.collection_name.find().pretty()                                      ---> align return_data in proper format
 db.user.insertMany([
     {'f_name':'Divya','l_name':'Prasad','phone_no': 9180059962},
     {'f_name':'JP','l_name':'Prasad','phone_no': 9080059362},
@@ -19,7 +19,8 @@ db.user.update(
     {'_id': ObjectId("61c1bc4b9e42ab15ba8bfbe8")},
     {$set:{'f_name':'Jaya','l_name':'Prasad','phone_no':912000345}}
     ) 
-                                --->  update a document
-db.deleteOne({'f_name':'Jaya'}) ---> delete a document
-db.deleteMany({'f_name':'Jaya'}) ---> delete many  documents
-db.admin.updateOne({name:'jp'},{$currentDate:{date:true}}) ---> update date in collection
+                                                                        --->  update a document
+db.deleteOne({'f_name':'Jaya'})                                         ---> delete a document
+db.deleteMany({'f_name':'Jaya'})                                        ---> delete many  documents
+db.admin.updateOne({name:'jp'},{$currentDate:{date:true}})              ---> update date in collection
+db.dropDatabase()                                                       ---> drop database 
