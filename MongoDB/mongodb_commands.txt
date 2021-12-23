@@ -28,3 +28,4 @@ db.collection_name.drop()                                               ---> dro
 db.admin.renameCollection('admin_collection')                           ---> rename collection
 db.user.createIndex({'qty':1})                                          --->  creating index
 db.user.getIndexes()                                                    --->  getIndexes of collection
+db.collection_name.find().limit()                                       --->  limit result array
