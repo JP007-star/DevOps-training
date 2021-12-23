@@ -29,3 +29,4 @@ db.admin.renameCollection('admin_collection')                           ---> ren
 db.user.createIndex({'qty':1})                                          --->  creating index
 db.user.getIndexes()                                                    --->  getIndexes of collection
 db.collection_name.find().limit()                                       --->  limit result array
+db.collection_name.find().count()                                       --->  get number of result fetched
