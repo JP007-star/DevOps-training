@@ -13,8 +13,8 @@ db.user.insertMany([
     {'f_name':'Divya','l_name':'Prasad','phone_no': 9180059962},
     {'f_name':'JP','l_name':'Prasad','phone_no': 9080059362},
     {'f_name':'Jack','l_name':'Prasad','phone_no': 9080059962}
-    ])                                  ---> insert multiple data single time
-db.user.remove({'f_name':'Jaya'})       ---> delete a document    
+    ])                                                                  ---> insert multiple data single time
+db.user.remove({'f_name':'Jaya'})                                       ---> delete a document    
 db.user.update(
     {'_id': ObjectId("61c1bc4b9e42ab15ba8bfbe8")},
     {$set:{'f_name':'Jaya','l_name':'Prasad','phone_no':912000345}}
