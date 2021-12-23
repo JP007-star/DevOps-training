@@ -24,3 +24,4 @@ db.deleteOne({'f_name':'Jaya'})                                         ---> del
 db.deleteMany({'f_name':'Jaya'})                                        ---> delete many  documents
 db.admin.updateOne({name:'jp'},{$currentDate:{date:true}})              ---> update date in collection
 db.dropDatabase()                                                       ---> drop database 
+db.createCollection('collection_name',{capped:true,size:10,max:2})      ---> create collection proper statement it will delete old data and hold only max value given while defining
