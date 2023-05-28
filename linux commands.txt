@@ -80,3 +80,6 @@ grap-r pattern dir - search for pattern recursively in dir
 locate file - find all instances of file
 whereis app - show possible localtions of app
 man command - show manual page for command
+#banner
+
+figlet -f slant  -c "J AY A  PRASAD" | lolcat && figlet -f digital -c "SOFTWARE ENGINEER" | lolcat 
